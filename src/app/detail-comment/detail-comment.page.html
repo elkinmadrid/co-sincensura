@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button text="Back" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" *ngIf="comment">
+
+  <div class="ion-padding">
+    <ion-card>
+      <ion-img src="{{comment.urlPhoto}}"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>
+          <ion-note>{{ comment.createDate | date: 'dd/MM/yyyy' }}</ion-note>
+        </ion-card-subtitle>
+        <ion-card-title>{{comment.title}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{comment.description}}
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

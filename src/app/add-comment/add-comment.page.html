@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button text="Back" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form [formGroup]="form" (ngSubmit)="subirArchivo()">
+    <ion-item>
+      <ion-label position="floating">Titulo <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required formControlName="title" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Descripción <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-textarea required formControlName="description" placeholder="Enter more information here..."></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label>Imagen <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input type="file" formControlName="archivo" (change)="cambioArchivo($event)" required></ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit" [disabled]="form.invalid && (porcentaje >= 0 && porcentaje <= 100)">
+      Publicar</ion-button>
+  </form>
+
+</ion-content>

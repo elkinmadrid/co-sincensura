@@ -1,0 +1,35 @@
+ion-item {
+  --inner-padding-end: 0;
+  --background: transparent;
+}
+
+
+ion-item h2 {
+  font-weight: 600;
+}
+
+.date {
+  margin-top: 12px;
+  margin-bottom: 1px;
+  margin-right: 50px;
+  float: right;
+  align-items: center;
+  display: flex;
+}
+
+
+ion-item ion-note {
+  font-size: 15px;
+  margin-right: 12px;
+  font-weight: normal;
+}
+
+h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+p {
+  line-height: 22px;
+}
