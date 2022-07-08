@@ -24,7 +24,7 @@
     "@capacitor/core": "3.0.0",
     "@ionic/angular": "^5.5.2",
     "firebase": "^8.6.3",
-    "moment": "^2.29.1",
+    "moment": "^2.29.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
